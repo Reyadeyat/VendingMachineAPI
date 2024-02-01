@@ -472,6 +472,12 @@ e- /reset: is not well defined
 
 #GET products by seller user role:
 $curl -k -X GET -H "Content-Type: application/json" -d '{"access_token": "c223e0ce-49a4-442d-885b-a689ba18a942"}' https://reyadeyat.net/vending_machine/crud/product_model
+{
+  "ERROR": "NO PRODUCTS TO LIST"
+}
 
 #GET products by buyer user role:
 $curl -k -X GET -H "Content-Type: application/json" -d '{"access_token": "df7199c0-388b-4719-ad78-6cfb3d6734ca"}' https://reyadeyat.net/vending_machine/crud/product_model
+{
+  "ERROR": "NO PRODUCTS TO LIST"
+}
