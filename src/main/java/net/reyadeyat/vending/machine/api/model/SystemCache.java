@@ -100,7 +100,7 @@ public class SystemCache {
         }
         synchronized (user_model_cache) {
             for (UserModel user_model : remove_cached_user_model) {
-                user_model_cache.remove(user_model.username);
+                user_model_cache.remove(user_model.access_token);
                 Logger.getLogger(SystemCache.class.getName()).log(Level.CONFIG, "UserCache Removed user " + user_model.username);
             }
         }
